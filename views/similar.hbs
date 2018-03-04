@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<form action="" autocomplete="off" class="form-horizontal" method="post" accept-charset="utf-8">
+    <div class="input-group">
+        <input name="searchtext" id="moveTitle" value="" class="form-control" type="text">
+        <span class="input-group-btn">
+           <button class="btn btn-default" type="submit" id="addressSearch">
+               <i class="glyphicon glyphicon-search"></i>
+           </button>
+        </span>
+    </div>
+</form>
+
+{{#if movie}}
+	<h1>Recommendations for {{movie}}</h1>
+	<h2>{{recommendations}}</h2>
+{{/if}}
